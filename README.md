@@ -1,16 +1,10 @@
-markdown
+**We will upload the complete code once the paper has been published.**
+# FedKb
 
-Collapse
-
-Wrap
-
-Copy
-# FedAvg MNIST with LeNet-5
-
-This project implements the Federated Averaging (FedAvg) algorithm using the LeNet-5 model on the MNIST dataset with a Dirichlet distribution (alpha=1) for non-IID data partitioning.
+This project implements the Federated learning with Knowledge Bank (FedKb) algorithm using the LeNet-5, ResNet-18 model on the MNIST and BloodMNIST dataset with a Dirichlet distribution (alpha=0.1 and 0.2 respectively) for non-IID data partitioning.
 
 ## Project Structure
-fedavg-mnist/
+fedkb/
 ├── data/                  # Directory for MNIST data (auto-downloaded)
 ├── src/                   # Source code
 │   ├── init.py        # Module initialization
@@ -23,14 +17,6 @@ fedavg-mnist/
 ├── requirements.txt       # Required Python libraries
 └── README.md              # Project documentation
 
-text
-
-Collapse
-
-Wrap
-
-Copy
-
 ## Prerequisites
 
 - Python 3.8 or higher
@@ -40,27 +26,15 @@ Copy
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/fedavg-mnist.git
+   git clone https://github.com/<your-username>/fedkb.git
    cd fedavg-mnist
 Install dependencies:
 bash
 
-Collapse
-
-Wrap
-
-Copy
 pip install -r requirements.txt
 Usage
 Run the main script to start the federated learning process:
 
-bash
-
-Collapse
-
-Wrap
-
-Copy
 python run.py
 Configuration
 All adjustable parameters are defined in src/config.py. You can modify:
@@ -83,13 +57,7 @@ Split the data using Dirichlet distribution (alpha=ALPHA).
 Run FedAvg with LeNet-5 for NUM_ROUNDS rounds, selecting NUM_CLIENTS_PER_ROUND clients randomly each round.
 Evaluate the global model on the test set after each round.
 Expected Output
-text
 
-Collapse
-
-Wrap
-
-Copy
 Server started...
 
 --- Round 1/3 ---
@@ -109,14 +77,6 @@ If you encounter Address already in use, stop the program and rerun, or change S
 The MNIST dataset will be downloaded automatically on the first run.
 License
 This project is licensed under the MIT License.
-
-text
-
-Collapse
-
-Wrap
-
-Copy
 
 ---
 
