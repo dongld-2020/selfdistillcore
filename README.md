@@ -1,10 +1,10 @@
 **We will upload the complete code once the paper has been published.**
-# FedKb
+# SelfDistillCore
 
-This project implements the Federated learning with Knowledge Bank (FedKb) algorithm using the LeNet-5, ResNet-18 model on the MNIST and BloodMNIST dataset with a Dirichlet distribution (alpha=0.1 and 0.2 respectively) for non-IID data partitioning.
+This project implements the Federated learning with Knowledge Bank (SelfDistillCore) algorithm using the LeNet-5, ResNet-18 model on the MNIST and BloodMNIST dataset with a Dirichlet distribution (alpha=0.1 and 0.2 respectively) for non-IID data partitioning.
 
 ## Project Structure
-fedkb/
+SelfDistillCore/
 ├── data/                  # Directory for MNIST data (auto-downloaded)
 ├── src/                   # Source code
 │   ├── init.py        # Module initialization
@@ -26,7 +26,7 @@ fedkb/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/fedkb.git
+   git clone https://github.com/<your-username>/SelfDistillCore.git
    cd fedavg-mnist
 Install dependencies:
 bash
@@ -82,14 +82,14 @@ This project is licensed under the MIT License.
 
 ### Hướng dẫn áp dụng
 1. **Tạo file `config.py`**:
-   - Tạo file `D:\mylife\FEDKB_GIT\src\config.py` và sao chép nội dung từ `src/config.py` ở trên.
+   - Tạo file `D:\mylife\SelfDistillCore_GIT\src\config.py` và sao chép nội dung từ `src/config.py` ở trên.
 
 2. **Cập nhật các file khác**:
-   - Thay thế nội dung của `server.py`, `client.py`, `utils.py`, và `run.py` trong thư mục `D:\mylife\FEDKB_GIT\src\` và `D:\mylife\FEDKB_GIT\` bằng các phiên bản đã cập nhật ở trên.
+   - Thay thế nội dung của `server.py`, `client.py`, `utils.py`, và `run.py` trong thư mục `D:\mylife\SelfDistillCore_GIT\src\` và `D:\mylife\SelfDistillCore_GIT\` bằng các phiên bản đã cập nhật ở trên.
 
 3. **Chạy lại**:
    ```cmd
-   cd D:\mylife\FEDKB_GIT
+   cd D:\mylife\SelfDistillCore_GIT
    python run.py
 Thay đổi tham số:
-Nếu muốn thay đổi số client, số vòng, hoặc bất kỳ tham số nào khác, chỉ cần chỉnh sửa trong D:\mylife\FEDKB_GIT\src\config.py.
+Nếu muốn thay đổi số client, số vòng, hoặc bất kỳ tham số nào khác, chỉ cần chỉnh sửa trong D:\mylife\SelfDistillCore_GIT\src\config.py.
