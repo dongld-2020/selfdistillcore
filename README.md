@@ -1,7 +1,7 @@
 **We will upload the complete code once the paper has been published.**
 # SelfDistillCore
 
-This project implements the Federated learning with Knowledge Bank (SelfDistillCore) algorithm using the LeNet-5, ResNet-18 model on the MNIST and BloodMNIST dataset with a Dirichlet distribution (alpha=0.1 and 0.2 respectively) for non-IID data partitioning.
+This project implements the Federated learning with Knowledge Bank applied EWMA to distill the global model itself (SelfDistillCore) algorithm using the LeNet-5, ResNet-18 model on the MNIST and BloodMNIST dataset with a Dirichlet distribution (alpha=0.1 and 0.2 respectively) for non-IID data partitioning.
 
 ## Project Structure
 SelfDistillCore/
